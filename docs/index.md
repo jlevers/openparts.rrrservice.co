@@ -38,7 +38,7 @@ We're just getting started. The database grows every time someone contributes wh
 
 OpenParts lives on GitHub. If you've got parts knowledge to share:
 
-1. **Fork the repo** → [jlevers/openparts](https://github.com/jlevers/openparts)
+1. **Fork the repo** → [jlevers/openparts.rrrservice.co](https://github.com/jlevers/openparts.rrrservice.co)
 2. **Add or edit** parts data in Markdown
 3. **Submit a pull request** — we'll review and merge
 

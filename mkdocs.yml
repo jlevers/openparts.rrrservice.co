@@ -1,8 +1,8 @@
 site_name: OpenParts
 site_description: "Open-source mechanical parts database. Repair, Resilience, Regeneration."
 site_url: https://openparts.rrrservice.co
-repo_url: https://github.com/jlevers/openparts
-repo_name: jlevers/openparts
+repo_url: https://github.com/jlevers/openparts.rrrservice.co
+repo_name: jlevers/openparts.rrrservice.co
 copyright: "Triple-R Service Co. — CC-BY-SA 4.0"
 
 theme:

@@ -18,7 +18,7 @@ Built because mechanics shouldn't have to dig through 50 websites to find a part
 
 ## Contributing
 
-See [Contributing Guide](https://openparts.rrrservice.co/contributing/) on the site, or just fork [jlevers/openparts](https://github.com/jlevers/openparts), add/edit markdown files, and open a PR.
+See [Contributing Guide](https://openparts.rrrservice.co/contributing/) on the site, or just fork [jlevers/openparts.rrrservice.co](https://github.com/jlevers/openparts.rrrservice.co), add/edit markdown files, and open a PR.
 
 Good contributions include:
 - Part numbers and cross-references
