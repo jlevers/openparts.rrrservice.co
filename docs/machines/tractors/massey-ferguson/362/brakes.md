@@ -97,7 +97,7 @@ Cross-reference the part numbers in the diagram with the data below.
 | Component | Part Number | Qty per Side |
 |---|---|---|
 | Actuating balls (7/8") | 1886562M1 | 6 |
-| Return springs | 1853148M1 | 4 |
+| Return springs | 1853148M1 | 3 |
 
 !!! tip "Rebuild first"
     The actuator housing itself rarely fails. Replace the balls and springs, clean everything up, and you're good. A full actuator replacement is almost never necessary. The 7/8" balls are a standard size — source from a bearing supplier or McMaster-Carr, not a tractor parts dealer.
