@@ -1,0 +1,71 @@
+site_name: OpenParts
+site_description: "Open-source mechanical parts database. Repair, Resilience, Regeneration."
+site_url: https://openparts.rrrservice.co
+repo_url: https://github.com/jlevers/openparts
+repo_name: jlevers/openparts
+copyright: "Triple-R Service Co. — CC-BY-SA 4.0"
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+
+extra_css:
+  - stylesheets/custom.css
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Machines:
+    - machines/index.md
+    - Tractors:
+      - machines/tractors/index.md
+      - Massey Ferguson:
+        - machines/tractors/massey-ferguson/index.md
+        - "362":
+          - machines/tractors/massey-ferguson/362/index.md
+          - Brakes: machines/tractors/massey-ferguson/362/brakes.md
+  - Contributing: contributing.md

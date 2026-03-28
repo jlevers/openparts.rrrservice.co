@@ -1,0 +1,189 @@
+/* OpenParts — McMaster-inspired: minimal, dense, functional */
+
+:root {
+  --md-primary-fg-color: #1a1a1a;
+  --md-primary-bg-color: #ffffff;
+  --md-accent-fg-color: #d35400;
+  --md-default-fg-color: #1a1a1a;
+  --md-default-fg-color--light: #555;
+  --md-typeset-font-size: 0.82rem;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #111111;
+  --md-default-fg-color: #e0e0e0;
+  --md-primary-fg-color: #1a1a1a;
+  --md-accent-fg-color: #e67e22;
+}
+
+/* Tighter line height, denser feel */
+.md-typeset {
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.md-typeset h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.4em;
+  border-bottom: 2px solid #1a1a1a;
+  padding-bottom: 0.3em;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h1 {
+  border-bottom-color: #444;
+}
+
+.md-typeset h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-top: 1.8em;
+  margin-bottom: 0.4em;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.2em;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h2 {
+  border-bottom-color: #333;
+}
+
+.md-typeset h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-top: 1.2em;
+  margin-bottom: 0.3em;
+}
+
+/* Dense tables — the core of the UI */
+.md-typeset table:not([class]) {
+  font-size: 0.78rem;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0.6em 0;
+}
+
+.md-typeset table:not([class]) th {
+  background: #f5f5f5;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  padding: 0.4em 0.6em;
+  border-bottom: 2px solid #ccc;
+  text-align: left;
+  white-space: nowrap;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+  background: #1e1e1e;
+  border-bottom-color: #444;
+}
+
+.md-typeset table:not([class]) td {
+  padding: 0.3em 0.6em;
+  border-bottom: 1px solid #eee;
+  vertical-align: top;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) td {
+  border-bottom-color: #222;
+}
+
+.md-typeset table:not([class]) tr:hover td {
+  background: #fffbe6;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) tr:hover td {
+  background: #1a1a0a;
+}
+
+/* Compact admonitions */
+.md-typeset .admonition,
+.md-typeset details {
+  font-size: 0.78rem;
+  margin: 0.6em 0;
+  border-width: 1px;
+  border-left-width: 3px;
+  box-shadow: none;
+}
+
+.md-typeset .admonition .admonition-title,
+.md-typeset details summary {
+  font-size: 0.78rem;
+  padding: 0.3em 0.6em;
+  font-weight: 700;
+}
+
+.md-typeset .admonition p,
+.md-typeset details p {
+  margin: 0.3em 0;
+}
+
+/* Tighter nav sidebar */
+.md-nav__item {
+  padding: 0;
+}
+
+.md-nav__link {
+  font-size: 0.78rem;
+  padding: 0.3em 0.6em;
+}
+
+/* Compact header */
+.md-header {
+  box-shadow: 0 1px 0 rgba(0,0,0,0.1);
+}
+
+.md-header__title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+/* Content width — use more screen */
+.md-grid {
+  max-width: 1400px;
+}
+
+/* Minimal paragraph spacing */
+.md-typeset p {
+  margin: 0.4em 0;
+}
+
+/* Lists — tighter */
+.md-typeset ul, .md-typeset ol {
+  margin: 0.3em 0;
+}
+
+.md-typeset li {
+  margin-bottom: 0.15em;
+}
+
+/* Code — monospace for part numbers inline */
+.md-typeset code {
+  font-size: 0.82em;
+  padding: 0.1em 0.3em;
+  background: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+}
+
+[data-md-color-scheme="slate"] .md-typeset code {
+  background: #1e1e1e;
+  border-color: #333;
+}
+
+/* Footer — minimal */
+.md-footer {
+  font-size: 0.72rem;
+}
+
+/* No rounded corners anywhere — sharp and industrial */
+.md-typeset .admonition,
+.md-typeset details,
+.md-typeset code,
+.md-search__input {
+  border-radius: 0;
+}
