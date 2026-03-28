@@ -16,7 +16,11 @@ The MF 362 uses **oil-immersed (wet) disc brakes** housed in the rear axle housi
 
 ## Parts Diagram
 
-![MF 362 Wet Brake Assembly — Exploded View](img/mf362-wet-brake-exploded.svg)
+The official AGCO parts book has exploded views of the complete brake assembly with OEM part numbers:
+
+**[→ AGCO Parts Book (free online lookup)](https://parts.agcocorp.com/)**
+
+Search for model "MF 362" and navigate to the brake section. Cross-reference the part numbers listed there with the data below.
 
 ---
 
