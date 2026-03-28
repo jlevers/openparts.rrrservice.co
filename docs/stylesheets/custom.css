@@ -1,33 +1,56 @@
-/* OpenParts — McMaster-inspired: minimal, dense, functional */
+/* OpenParts — matched to rrrservice.co design language */
 
 :root {
-  --md-primary-fg-color: #1a1a1a;
-  --md-primary-bg-color: #ffffff;
-  --md-accent-fg-color: #d35400;
-  --md-default-fg-color: #1a1a1a;
-  --md-default-fg-color--light: #555;
+  --md-primary-fg-color: #ffffff;
+  --md-primary-fg-color--light: #ffffff;
+  --md-primary-fg-color--dark: #ffffff;
+  --md-primary-bg-color: #111;
+  --md-primary-bg-color--light: #333;
+  --md-accent-fg-color: #1E6A24;
+  --md-default-fg-color: #111;
+  --md-default-fg-color--light: #333;
+  --md-default-fg-color--lighter: #555;
+  --md-typeset-color: #111;
+  --md-typeset-a-color: #1E6A24;
   --md-typeset-font-size: 0.82rem;
 }
 
 [data-md-color-scheme="slate"] {
-  --md-default-bg-color: #111111;
-  --md-default-fg-color: #e0e0e0;
-  --md-primary-fg-color: #1a1a1a;
-  --md-accent-fg-color: #e67e22;
+  --md-default-bg-color: #0e0e0e;
+  --md-default-fg-color: #ddd;
+  --md-default-fg-color--light: #aaa;
+  --md-default-fg-color--lighter: #777;
+  --md-primary-fg-color: #111;
+  --md-primary-bg-color: #ddd;
+  --md-accent-fg-color: #2d9e36;
+  --md-typeset-a-color: #2d9e36;
+}
+
+/* System font stack matching rrrservice.co */
+.md-typeset,
+.md-nav,
+.md-header,
+.md-footer {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 }
 
 /* Tighter line height, denser feel */
 .md-typeset {
   font-size: 0.82rem;
   line-height: 1.5;
+  color: #111;
+}
+
+[data-md-color-scheme="slate"] .md-typeset {
+  color: #ddd;
 }
 
 .md-typeset h1 {
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: 900;
   letter-spacing: -0.02em;
   margin-bottom: 0.4em;
-  border-bottom: 2px solid #1a1a1a;
+  border-bottom: 2px solid #111;
   padding-bottom: 0.3em;
 }
 
@@ -56,7 +79,38 @@
   margin-bottom: 0.3em;
 }
 
-/* Dense tables — the core of the UI */
+/* Links — green accent */
+.md-typeset a {
+  color: #1E6A24;
+}
+
+.md-typeset a:hover {
+  color: #155a1a;
+}
+
+[data-md-color-scheme="slate"] .md-typeset a {
+  color: #2d9e36;
+}
+
+/* Header bar */
+.md-header {
+  background: #111;
+  box-shadow: none;
+  border-bottom: 1px solid #333;
+}
+
+.md-header__title {
+  font-size: 0.9rem;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+}
+
+/* Tabs — match header */
+.md-tabs {
+  background: #111;
+}
+
+/* Dense tables */
 .md-typeset table:not([class]) {
   font-size: 0.78rem;
   border-collapse: collapse;
@@ -77,7 +131,7 @@
 }
 
 [data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
-  background: #1e1e1e;
+  background: #1a1a1a;
   border-bottom-color: #444;
 }
 
@@ -92,28 +146,70 @@
 }
 
 .md-typeset table:not([class]) tr:hover td {
-  background: #fffbe6;
+  background: #f5f5f0;
 }
 
 [data-md-color-scheme="slate"] .md-typeset table:not([class]) tr:hover td {
-  background: #1a1a0a;
+  background: #1a1a18;
 }
 
-/* Compact admonitions */
+/* Admonitions — rrrservice.co style callout boxes */
 .md-typeset .admonition,
 .md-typeset details {
   font-size: 0.78rem;
-  margin: 0.6em 0;
-  border-width: 1px;
-  border-left-width: 3px;
+  margin: 0.8em 0;
+  border: none;
+  border-left: 3px solid #1E6A24;
+  border-radius: 0;
   box-shadow: none;
+  background: #f5f5f5;
+  padding: 12px 16px;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition,
+[data-md-color-scheme="slate"] .md-typeset details {
+  background: #1a1a1a;
+  border-left-color: #2d9e36;
 }
 
 .md-typeset .admonition .admonition-title,
 .md-typeset details summary {
   font-size: 0.78rem;
-  padding: 0.3em 0.6em;
   font-weight: 700;
+  background: none;
+  border: none;
+  padding: 0 0 4px 0;
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+
+/* Fix icon overlap on admonition titles */
+.md-typeset .admonition .admonition-title::before,
+.md-typeset details summary::before {
+  display: none;
+}
+
+.md-typeset .admonition .admonition-title,
+.md-typeset details summary {
+  padding-left: 0;
+}
+
+/* Warning admonitions get orange left border */
+.md-typeset .admonition.warning,
+.md-typeset details.warning {
+  border-left-color: #c0392b;
+}
+
+/* Tip admonitions keep green */
+.md-typeset .admonition.tip,
+.md-typeset details.tip {
+  border-left-color: #1E6A24;
+}
+
+/* Note admonitions get neutral */
+.md-typeset .admonition.note,
+.md-typeset details.note {
+  border-left-color: #888;
 }
 
 .md-typeset .admonition p,
@@ -129,17 +225,6 @@
 .md-nav__link {
   font-size: 0.78rem;
   padding: 0.3em 0.6em;
-}
-
-/* Compact header */
-.md-header {
-  box-shadow: 0 1px 0 rgba(0,0,0,0.1);
-}
-
-.md-header__title {
-  font-size: 0.9rem;
-  font-weight: 700;
-  letter-spacing: 0.02em;
 }
 
 /* Content width — use more screen */
@@ -161,18 +246,20 @@
   margin-bottom: 0.15em;
 }
 
-/* Code — monospace for part numbers inline */
+/* Code — monospace for part numbers */
 .md-typeset code {
   font-size: 0.82em;
   padding: 0.1em 0.3em;
-  background: #f0f0f0;
+  background: #f5f5f5;
   border: 1px solid #ddd;
-  border-radius: 2px;
+  border-radius: 0;
+  color: #111;
 }
 
 [data-md-color-scheme="slate"] .md-typeset code {
-  background: #1e1e1e;
+  background: #1a1a1a;
   border-color: #333;
+  color: #ddd;
 }
 
 /* Footer — minimal */
@@ -186,4 +273,10 @@
 .md-typeset code,
 .md-search__input {
   border-radius: 0;
+}
+
+/* Search bar */
+.md-search__input {
+  border-radius: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 }
