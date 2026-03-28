@@ -74,7 +74,10 @@ Cross-reference the part numbers in the diagram with the data below.
 | **Thickness** | 3mm |
 | **Material** | Steel |
 
-**Quantity:** 1 per side (2 total).
+**Quantity:**
+
+- Before S/N B33001 (3 friction discs/side): **1 per side (2 total)**
+- After S/N B33001 (4 friction discs/side): **2 per side (4 total)**
 
 !!! note "Inspect before replacing"
     Separator plates are steel and don't wear like friction discs. Check for warping, scoring, and heat discoloration. If they mic out flat and aren't scored, they're reusable.
