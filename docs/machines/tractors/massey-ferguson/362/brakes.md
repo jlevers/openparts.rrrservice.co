@@ -18,9 +18,9 @@ The MF 362 uses **oil-immersed (wet) disc brakes** housed in the rear axle housi
 
 The official AGCO parts book has exploded views of the complete brake assembly with OEM part numbers:
 
-**[→ AGCO Parts Book (free online lookup)](https://parts.agcocorp.com/)**
+**[→ MF 362 Disc Brakes — AGCO Parts Book](https://parts.agcocorp.com/us/en/apbcontent/model/masseyferguson/819779/MF%20362%20TRACTOR/ag143006-1)**
 
-Search for model "MF 362" and navigate to the brake section. Cross-reference the part numbers listed there with the data below.
+Cross-reference the part numbers in the diagram with the data below.
 
 ---
 
