@@ -14,6 +14,12 @@ The MF 362 uses **oil-immersed (wet) disc brakes** housed in the rear axle housi
 
 ---
 
+## Parts Diagram
+
+![MF 362 Wet Brake Assembly — Exploded View](img/mf362-wet-brake-exploded.svg)
+
+---
+
 ## Friction Discs
 
 **These are wear items — always replace during a rebuild.**
