@@ -7,6 +7,7 @@ Browse parts data by machine type. Pick a category to start drilling down.
 | Type | Description |
 |------|-------------|
 | **[Tractors](tractors/index.md)** | Agricultural and utility tractors |
+| **[Cars](cars/index.md)** | Passenger vehicles |
 
 ---
 

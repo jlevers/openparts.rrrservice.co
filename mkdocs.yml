@@ -57,4 +57,11 @@ nav:
         - "362":
           - machines/tractors/massey-ferguson/362/index.md
           - Brakes: machines/tractors/massey-ferguson/362/brakes.md
+    - Cars:
+      - machines/cars/index.md
+      - BMW:
+        - machines/cars/bmw/index.md
+        - F10 528i:
+          - machines/cars/bmw/f10-528i/index.md
+          - Exhaust Cam & Oil Starvation: machines/cars/bmw/f10-528i/exhaust-cam-oil-starvation.md
   - Contributing: contributing.md
